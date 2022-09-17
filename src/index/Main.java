@@ -1,9 +1,6 @@
 package index;
 
 import java.util.Scanner;
-
-import index.Index;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
@@ -20,9 +17,13 @@ public class Main {
         System.out.println();
         showAdjacencyMatrix(adjacencyMatrix);
         System.out.println();
-        System.out.println("Ordem do gráfico: " + edgesQuantity);
+
         System.out.println("Tamanho do gráfico: " + verticesQuantity);
+
+        System.out.println("Ordem do gráfico: " + edgesQuantity);
+
         System.out.println("Grau de entrada de todos os vértices: ");
+        
         Index.getEntryDegree();
         System.out.println();
         System.out.println("Número de vértices isolados: " + isolatedVertices);
